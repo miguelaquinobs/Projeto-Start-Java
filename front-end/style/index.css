@@ -1,0 +1,26 @@
+@import url('/style/style.css');
+
+html{
+  overflow-y: hidden;
+}
+main {
+  display: flex;
+  margin: 30px 50px;
+  background-image: url("../images/logo.png");
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#logo {
+  animation: rotacao 20s infinite linear;
+}
+
+#textocentro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

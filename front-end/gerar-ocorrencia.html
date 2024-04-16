@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Tech - Cadastrar Ocorrência</title>
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+
+    <link rel="stylesheet" href="/style/gerar-ocorrencia.css" />
+    <script src="/js/gerar-ocorrencia.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div id="logo-container">
+        <a href="index.html"><div id="logo"></div></a>
+        <a href="index.html"><h2>Health Tech</h2></a>
+      </div>
+      <div id="opcoes-nav">
+        <a href="ambulancia.html" id="login">Ocorrências</a>
+      </div>
+    </nav>
+
+    <main>
+      <div id="form-container">
+        <h1>Gerar Ocorrência</h1>
+
+        <form id="cadastroForm">
+
+          <div class="input-field">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required maxlength="100"/>
+          </div>
+
+          <div class="text-field">
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" id="descricao" cols="45" rows="5"></textarea>
+          </div>
+
+          <div class="input-field">
+            <label for="ambulancia">Ambulância:</label>
+            <select id="ambulancia" name="ambulancia" disabled>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label for="paciente">Paciente:</label>
+            <select id="paciente" name="paciente" disabled>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label for="hospital">Hospital:</label>
+            <select id="hospital" name="hospital">
+            </select>
+          </div>
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
